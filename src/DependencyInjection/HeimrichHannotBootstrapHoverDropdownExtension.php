@@ -5,7 +5,7 @@
  * @license LGPL-3.0-or-later
  */
 
-namespace HeimrichHannot\HeimrichHannotBootstrapHoverDropdownBundle\DependencyInjection;
+namespace HeimrichHannot\BootstrapHoverDropdownBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;

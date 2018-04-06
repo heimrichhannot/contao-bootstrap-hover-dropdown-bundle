@@ -1,7 +1,7 @@
 huh:
     encore:
         entries:
-            - { name: contao-bootstrap-hover-dropdown-bundle, file: "vendor/heimrichhannot/contao-bootstrap-hover-dropdown-bundle/src/Resources/public/js/contao-bootstrap-hover-dropdown-bundle.es6.js", requiresCss: true }
+            - { name: contao-bootstrap-hover-dropdown-bundle, file: 'vendor/heimrichhannot/contao-bootstrap-hover-dropdown-bundle/src/Resources/public/js/contao-bootstrap-hover-dropdown-bundle.es6.js', requiresCss: true }
         legacy:
             js:
                 - contao-bootstrap-hover-dropdown-bundle

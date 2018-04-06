@@ -5,10 +5,9 @@
  * @license LGPL-3.0-or-later
  */
 
-namespace HeimrichHannot\FilterBundle\Tests;
+namespace HeimrichHannot\BootstrapHoverDropdownBundle\Tests;
 
 use HeimrichHannot\BootstrapHoverDropdownBundle\HeimrichHannotBootstrapHoverDropdownBundle;
-use HeimrichHannot\FilterBundle\HeimrichHannotContaoFilterBundle;
 use PHPUnit\Framework\TestCase;
 
 class HeimrichHannotBootstrapHoverDropdownBundleTest extends TestCase
@@ -28,7 +27,7 @@ class HeimrichHannotBootstrapHoverDropdownBundleTest extends TestCase
      */
     public function testReturnsTheContainerExtension()
     {
-        $bundle = new HeimrichHannotContaoFilterBundle();
+        $bundle = new HeimrichHannotBootstrapHoverDropdownBundle();
 
         $this->assertInstanceOf(
             'HeimrichHannot\BootstrapHoverDropdownBundle\DependencyInjection\HeimrichHannotBootstrapHoverDropdownExtension',

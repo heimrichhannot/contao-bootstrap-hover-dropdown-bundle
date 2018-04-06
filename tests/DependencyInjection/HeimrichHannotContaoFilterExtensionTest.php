@@ -5,9 +5,9 @@
  * @license LGPL-3.0-or-later
  */
 
-namespace HeimrichHannot\FilterBundle\Tests\DependencyInjection;
+namespace HeimrichHannot\BootstrapHoverDropdownBundle\Tests\DependencyInjection;
 
-use HeimrichHannot\HeimrichHannotBootstrapHoverDropdownBundle\DependencyInjection\HeimrichHannotBootstrapHoverDropdownExtension;
+use HeimrichHannot\BootstrapHoverDropdownBundle\DependencyInjection\HeimrichHannotBootstrapHoverDropdownExtension;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
@@ -36,6 +36,6 @@ class HeimrichHannotContaoFilterExtensionTest extends TestCase
     public function testCanBeInstantiated()
     {
         $extension = new HeimrichHannotBootstrapHoverDropdownExtension();
-        $this->assertInstanceOf('HeimrichHannot\HeimrichHannotBootstrapHoverDropdownBundle\DependencyInjection\HeimrichHannotBootstrapHoverDropdownExtension', $extension);
+        $this->assertInstanceOf('HeimrichHannot\BootstrapHoverDropdownBundle\DependencyInjection\HeimrichHannotBootstrapHoverDropdownExtension', $extension);
     }
 }

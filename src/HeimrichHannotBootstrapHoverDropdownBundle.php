@@ -7,7 +7,7 @@
 
 namespace HeimrichHannot\BootstrapHoverDropdownBundle;
 
-use HeimrichHannot\HeimrichHannotBootstrapHoverDropdownBundle\DependencyInjection\HeimrichHannotBootstrapHoverDropdownExtension;
+use HeimrichHannot\BootstrapHoverDropdownBundle\DependencyInjection\HeimrichHannotBootstrapHoverDropdownExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class HeimrichHannotBootstrapHoverDropdownBundle extends Bundle
