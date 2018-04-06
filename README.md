@@ -27,7 +27,6 @@ Using this, foxy will automatically add the needed yarn packages to your project
 
 If you want to specify which frontend assets to use on a per page level, you can use [heimrichhannot/contao-encore-bundle](https://github.com/heimrichhannot/contao-encore-bundle). 
 
-
 ## Usage
 
 Select the `nav_hover_dropdown.html5` (legacy: `nav_navbar_collapse_hover.html5`) template inside your navigation module or copy the template and adjust for your needs.
