@@ -42,5 +42,8 @@
   "extra": {
     "contao-manager-plugin": "HeimrichHannot\\BootstrapHoverDropdownBundle\\ContaoManager\\Plugin",
     "foxy": true
+  },
+  "suggest": {
+    "heimrichhannot/contao-encore-bundle": "Provide webpack encore asset support."
   }
 }
