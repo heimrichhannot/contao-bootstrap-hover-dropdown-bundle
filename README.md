@@ -9,7 +9,7 @@ This bundle offers hover functionality for the contao navigation using a bootstr
 
 ## Installation
 
-Install via composer: `composer require heimrichhannot/contao-encore-bundle` and update your database.
+Install via composer: `composer require heimrichhannot/contao-bootstrap-hover-dropdown-bundle` and update your database.
 
 ### Installation with frontend assets using webpack
 
