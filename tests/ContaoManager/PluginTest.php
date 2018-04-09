@@ -77,7 +77,7 @@ class PluginTest extends ContaoTestCase
         $this->assertArrayHasKey('entries', $extensionConfigs['huh']['encore']);
         $this->assertNotEmpty($extensionConfigs['huh']['encore']['entries']);
 
-        $this->assertContains(['name' => 'contao-bootstrap-hover-dropdown-bundle', 'file' => 'vendor/heimrichhannot/contao-bootstrap-hover-dropdown-bundle/src/Resources/public/js/contao-bootstrap-hover-dropdown-bundle.es6.js', 'requiresCss' => 'true'], $extensionConfigs['huh']['encore']['entries']);
+        $this->assertContains(['name' => 'contao-bootstrap-hover-dropdown-bundle', 'file' => 'vendor/heimrichhannot/contao-bootstrap-hover-dropdown-bundle/src/Resources/public/js/contao-bootstrap-hover-dropdown-bundle.es6.js'], $extensionConfigs['huh']['encore']['entries']);
 
         $this->assertArrayHasKey('legacy', $extensionConfigs['huh']['encore']);
         $this->assertNotEmpty($extensionConfigs['huh']['encore']['legacy']);
@@ -85,7 +85,7 @@ class PluginTest extends ContaoTestCase
         $this->assertArrayHasKey('js', $extensionConfigs['huh']['encore']['legacy']);
         $this->assertNotEmpty($extensionConfigs['huh']['encore']['legacy']['js']);
 
-        $this->assertContains('contao-bootstrap-hover-dropdown-bundle', $extensionConfigs['huh']['encore']['legacy']['js']);
+        $this->assertContains('bootstrap-hover-dropdown', $extensionConfigs['huh']['encore']['legacy']['js']);
     }
 
     /**
