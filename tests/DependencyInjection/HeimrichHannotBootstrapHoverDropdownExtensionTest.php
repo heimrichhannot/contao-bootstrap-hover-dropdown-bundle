@@ -12,7 +12,7 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
 
-class HeimrichHannotContaoFilterExtensionTest extends TestCase
+class HeimrichHannotBootstrapHoverDropdownExtensionTest extends TestCase
 {
     /**
      * @var ContainerBuilder
