@@ -1,0 +1,44 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js publish
+
+PATH: 
+  /home/rkaltofen/bin:/home/rkaltofen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/rico/Kunden/github/phalcon-devtools
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.4.0
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "contao-bootstrap-hover-dropdown-bundle",
+    "version": "1.0.1",
+    "dependencies": {
+      "jquery": "^3.3.1",
+      "bootstrap": "^4.0.0",
+      "popper.js": "^1.14.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/share/yarn/lib/cli.js:128791:13)
+      at Interface.emit (events.js:160:13)
+      at Interface._ttyWrite (readline.js:784:16)
+      at ReadStream.onkeypress (readline.js:165:10)
+      at ReadStream.emit (events.js:160:13)
+      at emitKeys (internal/readline.js:420:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1020:36)
+      at ReadStream.emit (events.js:160:13)
+      at addChunk (_stream_readable.js:269:12)
