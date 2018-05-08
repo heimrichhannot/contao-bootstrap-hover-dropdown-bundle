@@ -1,5 +1,3 @@
-global.$ = global.jQuery = require('jquery');
-
 (function($) {
     // outside the scope of the jQuery plugin to
     // keep track of all dropdowns

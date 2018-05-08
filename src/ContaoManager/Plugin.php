@@ -27,7 +27,7 @@ class Plugin implements BundlePluginInterface, ExtensionPluginInterface
     public function getBundles(ParserInterface $parser)
     {
         return [
-            BundleConfig::create(HeimrichHannotBootstrapHoverDropdownBundle::class)->setLoadAfter([ContaoCoreBundle::class]),
+            BundleConfig::create(HeimrichHannotBootstrapHoverDropdownBundle::class)->setLoadAfter([ContaoCoreBundle::class, 'bootstrapper']),
         ];
     }
 

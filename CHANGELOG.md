@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2018-05-08
+
+### Fixed
+- `heimrichhannot/contao-bootstrapper` incompatibility fixed
+- legacy js support, without using encore
+
 ## [1.0.2] - 2018-04-18
 
 ### Fixed
