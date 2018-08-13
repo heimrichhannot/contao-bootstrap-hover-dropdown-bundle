@@ -140,20 +140,20 @@
         if (typeof Modernizr === 'object' && Modernizr.touchevents && /Mobi/i.test(navigator.userAgent)) {
             var $allDropDowns = $('[data-hover="dropdown"]'),
                 $allActiveDropDowns = $('[data-hover="dropdown"].trail, [data-hover="dropdown"].active'),
-                isMobile = Modernizr.mq('screen and (max-width: 767px)');
+                isMobile = Modernizr.mq('screen and (max-width: 991px)');
             $allDropDowns.attr('data-toggle', 'dropdown');
             $allDropDowns.removeAttr('data-hover', '');
 
             // mobile support
             if (isMobile) {
-                $allActiveDropDowns.parent().addClass('open');
+                $allActiveDropDowns.siblings('ul').addClass('show');
             }
 
             // bootstraps clearMenus function closes all dropdowns per default, we need trail and active to stay open
             $allDropDowns.parent().on('hide.bs.dropdown', function(e) {
                 var $this = $(this);
 
-                if ($this.hasClass('trail') || $this.hasClass('active')) {
+                if (($this.hasClass('trail') || $this.hasClass('active')) && $this.closest('.level_2').length > 0) {
                     e.preventDefault();
                 }
             });

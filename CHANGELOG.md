@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.4] - 2018-08-13
+
+### Fixed
+- bootstrap 4 issues
+
 ## [1.0.3] - 2018-05-08
 
 ### Fixed

@@ -40,7 +40,6 @@ global.$ = global.jQuery = require('jquery');
                 timeoutClose;
 
             $parent.hover(function(event) {
-
                 // so a neighbor can't open the dropdown
                 // FIX: see https://github.com/CWSpear/bootstrap-hover-dropdown/issues/55
                 if ($parent.hasClass('open') && !$this.is(event.target)) {
@@ -137,25 +136,24 @@ global.$ = global.jQuery = require('jquery');
     };
 
     $(document).ready(function() {
-
         // touch support -> click
         if (typeof Modernizr === 'object' && Modernizr.touchevents && /Mobi/i.test(navigator.userAgent)) {
             let $allDropDowns = $('[data-hover="dropdown"]'),
                 $allActiveDropDowns = $('[data-hover="dropdown"].trail, [data-hover="dropdown"].active'),
-                isMobile = Modernizr.mq('screen and (max-width: 767px)');
+                isMobile = Modernizr.mq('screen and (max-width: 991px)'); // default bs4 breakpoint for hamburger menu
             $allDropDowns.attr('data-toggle', 'dropdown');
             $allDropDowns.removeAttr('data-hover', '');
 
             // mobile support
             if (isMobile) {
-                $allActiveDropDowns.parent().addClass('open');
+                $allActiveDropDowns.siblings('ul').addClass('show');
             }
 
             // bootstraps clearMenus function closes all dropdowns per default, we need trail and active to stay open
             $allDropDowns.parent().on('hide.bs.dropdown', function(e) {
                 let $this = $(this);
-
-                if ($this.hasClass('trail') || $this.hasClass('active')) {
+                
+                if (($this.hasClass('trail') || $this.hasClass('active')) && $this.closest('.level_2').length > 0) {
                     e.preventDefault();
                 }
             });
@@ -165,7 +163,7 @@ global.$ = global.jQuery = require('jquery');
                 let $this = $(this);
                 $this.parent().siblings().removeClass('open');
             });
-
+            
             return false;
         }
 
