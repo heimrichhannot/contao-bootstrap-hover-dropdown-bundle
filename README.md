@@ -9,23 +9,28 @@ This bundle offers hover functionality for the contao navigation using a bootstr
 
 ## Installation
 
+As a prerequisite for this bundle to work you need Bootstrap 4.
+
 Install via composer: `composer require heimrichhannot/contao-bootstrap-hover-dropdown-bundle` and update your database.
 
 ### Installation with frontend assets using webpack
 
-If you want to add the frontend assets (JS & CSS) to your project using webpack, please
-add [foxy/foxy](https://github.com/fxpio/foxy) to the depndencies of your project's `composer.json` and add the following to its `config` section:
+This bundle is prepared to be used with webpack. Please see the [introductions](https://github.com/heimrichhannot/contao-encore-bundle/blob/master/docs/introductions/bundles_with_webpack.md). If you want to configure your Modernizr setup using Webpack, also check out the Modernizr section there.
 
-```json
-"foxy": {
-  "manager": "yarn",
-  "manager-version": "^1.5.0"
+#### Modernizr config
+
+If you configure your Modernizr setup with webpack, you can disable `$GLOBALS['TL_JAVASCRIPT']['modernizr']`. Following configuration is needed:
+
+```javascript
+{
+    "options": [
+        "mq"
+    ],
+    "feature-detects": [
+        "test/touchevents"
+    ]
 }
 ```
-
-Using this, foxy will automatically add the needed yarn packages to your project's `node_modules` folder.
-
-If you want to specify which frontend assets to use on a per page level, you can use [heimrichhannot/contao-encore-bundle](https://github.com/heimrichhannot/contao-encore-bundle). 
 
 ## Usage
 
