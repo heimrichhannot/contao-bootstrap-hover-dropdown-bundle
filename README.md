@@ -9,7 +9,9 @@ This bundle offers hover functionality for the contao navigation using a bootstr
 
 ## Installation
 
-As a prerequisite for this bundle to work you need Bootstrap 4.
+Prerequisites:
+* Bootstrap ^4.0
+* Contao ^4.4
 
 Install via composer: `composer require heimrichhannot/contao-bootstrap-hover-dropdown-bundle` and update your database.
 
