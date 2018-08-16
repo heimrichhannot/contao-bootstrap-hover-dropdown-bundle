@@ -1,6 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.7] - 2018-08-16
+
+### Fixed
+- no menu shown with default template
+
+### Changed
+- removed useless Extension class
+
 ## [1.0.6] - 2018-08-15
 
 ### Fixed
