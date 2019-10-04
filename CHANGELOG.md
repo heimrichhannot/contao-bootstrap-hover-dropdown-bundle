@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.8] - 2019-10-04
+
+### Fixed
+- classes
+
 ## [1.0.7] - 2018-08-16
 
 ### Fixed
