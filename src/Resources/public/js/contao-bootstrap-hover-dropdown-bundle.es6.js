@@ -39,6 +39,16 @@ global.$ = global.jQuery = require('jquery');
                 timeoutOpen,
                 timeoutClose;
 
+            $this.on('click', function(e) {
+                let url = $(this).attr('href');
+
+                e.preventDefault();
+
+                if (url !== null && url.length > 0) {
+                    location.href = url;
+                }
+            });
+
             $parent.hover(function(event) {
                 // so a neighbor can't open the dropdown
                 // FIX: see https://github.com/CWSpear/bootstrap-hover-dropdown/issues/55
@@ -152,7 +162,7 @@ global.$ = global.jQuery = require('jquery');
             // bootstraps clearMenus function closes all dropdowns per default, we need trail and active to stay open
             $allDropDowns.parent().on('hide.bs.dropdown', function(e) {
                 let $this = $(this);
-                
+
                 if (($this.hasClass('trail') || $this.hasClass('active')) && $this.closest('.level_2').length > 0) {
                     e.preventDefault();
                 }
@@ -163,7 +173,7 @@ global.$ = global.jQuery = require('jquery');
                 let $this = $(this);
                 $this.parent().siblings().removeClass('open');
             });
-            
+
             return false;
         }
 
