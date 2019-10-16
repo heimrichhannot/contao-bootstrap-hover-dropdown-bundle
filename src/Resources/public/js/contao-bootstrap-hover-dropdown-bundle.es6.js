@@ -45,7 +45,7 @@ global.$ = global.jQuery = require('jquery');
                 e.preventDefault();
 
                 if (url !== null && url.length > 0) {
-                    location.href = url;
+                    location.href = this.href;
                 }
             });
 
