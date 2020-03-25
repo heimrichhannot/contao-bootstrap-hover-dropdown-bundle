@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Copyright (c) 2019 Heimrich & Hannot GmbH
+ * Copyright (c) 2020 Heimrich & Hannot GmbH
  * @license LGPL-3.0-or-later
  */
 
@@ -11,15 +11,17 @@ use Contao\CoreBundle\ContaoCoreBundle;
 use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
+use Contao\ManagerPlugin\Config\ConfigPluginInterface;
 use Contao\ManagerPlugin\Config\ContainerBuilder;
 use Contao\ManagerPlugin\Config\ExtensionPluginInterface;
 use HeimrichHannot\BootstrapHoverDropdownBundle\HeimrichHannotBootstrapHoverDropdownBundle;
 use HeimrichHannot\UtilsBundle\Container\ContainerUtil;
+use Symfony\Component\Config\Loader\LoaderInterface;
 
 /**
  * Class Plugin.
  */
-class Plugin implements BundlePluginInterface, ExtensionPluginInterface
+class Plugin implements BundlePluginInterface, ExtensionPluginInterface, ConfigPluginInterface
 {
     /**
      * {@inheritdoc}
@@ -45,5 +47,13 @@ class Plugin implements BundlePluginInterface, ExtensionPluginInterface
             $extensionConfigs,
             __DIR__.'/../Resources/config/config_encore.yml'
         );
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function registerContainerConfiguration(LoaderInterface $loader, array $managerConfig)
+    {
+        $loader->load('@HeimrichHannotBootstrapHoverDropdownBundle/Resources/config/services.yml');
     }
 }

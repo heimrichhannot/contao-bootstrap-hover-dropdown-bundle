@@ -1,6 +1,13 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2020-03-25
+- made compatible with contao 4.9
+- assets now added from hook
+- update encore bundle config
+- increased minimum encore bundle version to 1.5
+- updated symfony requirements
+
 ## [1.1.1] - 2019-10-16
 
 ### Fixed

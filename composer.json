@@ -6,7 +6,7 @@
   "license": "LGPL-3.0-or-later",
   "require": {
     "php": "^7.1",
-    "symfony/framework-bundle": "^3.4",
+    "symfony/http-kernel": "^3.4.26|^4.1.12",
     "contao/core-bundle": "^4.4",
     "heimrichhannot/contao-utils-bundle": "^2.4",
     "heimrichhannot-contao-components/modernizr": "^1.0"
@@ -24,16 +24,7 @@
   "autoload": {
     "psr-4": {
       "HeimrichHannot\\BootstrapHoverDropdownBundle\\": "src/"
-    },
-    "classmap": [
-      "src/"
-    ],
-    "exclude-from-classmap": [
-      "src/Resources/contao/config/",
-      "src/Resources/contao/dca/",
-      "src/Resources/contao/languages/",
-      "src/Resources/contao/templates/"
-    ]
+    }
   },
   "autoload-dev": {
     "psr-4": {
@@ -46,5 +37,8 @@
   },
   "suggest": {
     "heimrichhannot/contao-encore-bundle": "Provide webpack encore asset support."
+  },
+  "conflict": {
+    "heimrichhannot/contao-encore-bundle": "<1.5"
   }
 }
