@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [Unreleased] - 2022-03-24
+## [1.3.0] - 2022-03-24
 - Added: license file
 - Changed: allow php 8
 
