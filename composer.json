@@ -5,7 +5,7 @@
   "keywords": ["contao", "bootstrap", "navigation", "hover-dropdown"],
   "license": "LGPL-3.0-or-later",
   "require": {
-    "php": "^7.1",
+    "php": "^7.1 || ^8.0",
     "symfony/http-kernel": "^3.4.26|^4.1.12",
     "contao/core-bundle": "^4.4",
     "heimrichhannot/contao-utils-bundle": "^2.4",
