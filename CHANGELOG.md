@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.3.1] - 2022-05-18
+- Fixed: added open class to trail list items
+- Updated: gitignore
+
 ## [1.3.0] - 2022-03-24
 - Added: license file
 - Changed: allow php 8

@@ -6,3 +6,5 @@ Thumbs.db
 .sass-cache
 /build
 /node_module
+.history
+*.code-workspace
