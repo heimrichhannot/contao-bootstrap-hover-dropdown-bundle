@@ -180,6 +180,7 @@ global.$ = global.jQuery = require('jquery');
             $allDropDowns.on('click', function(e) {
                 let $this = $(this);
                 $this.parent().siblings().removeClass('open');
+                $this.parent().siblings().find('.dropdown-menu:first').removeClass('show');
             });
 
             return false;

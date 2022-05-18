@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.3.3] - 2022-05-18
+- Fixed: close submenu if other submenu is open on mobile
+
 ## [1.3.2] - 2022-05-18
 - Fixed: open submenu on mobile
 

@@ -170,6 +170,7 @@
             $allDropDowns.on('click', function(e) {
                 var $this = $(this);
                 $this.parent().siblings().removeClass('open');
+                $this.parent().siblings().find('.dropdown-menu:first').removeClass('show');
             });
 
             return false;
