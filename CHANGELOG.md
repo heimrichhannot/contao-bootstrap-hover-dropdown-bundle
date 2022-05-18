@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.3.2] - 2022-05-18
+- Fixed: open submenu on mobile
+
 ## [1.3.1] - 2022-05-18
 - Fixed: added open class to trail list items
 - Updated: gitignore

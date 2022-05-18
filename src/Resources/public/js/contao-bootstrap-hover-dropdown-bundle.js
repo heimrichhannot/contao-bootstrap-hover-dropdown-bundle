@@ -146,8 +146,15 @@
 
             // mobile support
             if (isMobile) {
-                $allActiveDropDowns.siblings('ul').addClass('show');
-                $allActiveDropDowns.parents().addClass('open');
+                $('.navbar-collapse').on('shown.bs.collapse', function(e) {
+                    $allActiveDropDowns.siblings('ul').addClass('show');
+                    $allActiveDropDowns.parents('li').addClass('open');
+                });
+
+                $('.navbar-collapse').on('hide.bs.collapse', function(e) {
+                    $allActiveDropDowns.siblings('ul').removeClass('show');
+                    $allActiveDropDowns.parents('li').removeClass('open');
+                });
             }
 
             // bootstraps clearMenus function closes all dropdowns per default, we need trail and active to stay open
