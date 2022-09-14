@@ -6,29 +6,14 @@
   "license": "LGPL-3.0-or-later",
   "require": {
     "php": "^7.1 || ^8.0",
-    "symfony/http-kernel": "^3.4.26|^4.1.12",
+    "symfony/http-kernel": "^3.4.26 || ^4.1.12 || ^5.4",
     "contao/core-bundle": "^4.4",
     "heimrichhannot/contao-utils-bundle": "^2.4",
     "heimrichhannot-contao-components/modernizr": "^1.0"
   },
-  "require-dev": {
-    "contao/test-case": "^1.1",
-    "contao/manager-plugin": "^2.0",
-    "friendsofphp/php-cs-fixer": "^2.2",
-    "phpunit/phpunit": ">=6.0 <6.5",
-    "php-http/guzzle6-adapter": "^1.1",
-    "php-http/message-factory": "^1.0.2",
-    "php-coveralls/php-coveralls": "^2.0",
-    "symfony/phpunit-bridge": "^3.2"
-  },
   "autoload": {
     "psr-4": {
       "HeimrichHannot\\BootstrapHoverDropdownBundle\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "HeimrichHannot\\BootstrapHoverDropdownBundle\\Test\\": "tests/"
     }
   },
   "extra": {

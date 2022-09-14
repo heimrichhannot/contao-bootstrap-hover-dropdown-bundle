@@ -2,8 +2,6 @@
 
 ![](https://img.shields.io/packagist/v/heimrichhannot/contao-bootstrap-hover-dropdown-bundle.svg)
 ![](https://img.shields.io/packagist/dt/heimrichhannot/contao-bootstrap-hover-dropdown-bundle.svg)
-[![](https://img.shields.io/travis/heimrichhannot/contao-bootstrap-hover-dropdown-bundle/master.svg)](https://travis-ci.org/heimrichhannot/contao-bootstrap-hover-dropdown-bundle/)
-[![](https://img.shields.io/coveralls/heimrichhannot/contao-bootstrap-hover-dropdown-bundle/master.svg)](https://coveralls.io/github/heimrichhannot/contao-bootstrap-hover-dropdown-bundle)
 
 This bundle offers hover functionality for the contao navigation using a bootstrap dropdown menu.
 
