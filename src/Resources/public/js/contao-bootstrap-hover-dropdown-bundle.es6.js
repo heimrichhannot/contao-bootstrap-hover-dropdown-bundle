@@ -147,7 +147,7 @@ global.$ = global.jQuery = require('jquery');
 
     $(document).ready(function() {
         // touch support -> click
-        if (typeof Modernizr === 'object' && Modernizr.touchevents && /Mobi/i.test(navigator.userAgent)) {
+        if (typeof Modernizr === 'object' && Modernizr.touchevents && (/Mobi|Safari/i.test(navigator.userAgent))) {
             let $allDropDowns = $('[data-hover="dropdown"]'),
                 $allActiveDropDowns = $('[data-hover="dropdown"].trail, [data-hover="dropdown"].active'),
                 isMobile = Modernizr.mq('screen and (max-width: 991px)'); // default bs4 breakpoint for hamburger menu

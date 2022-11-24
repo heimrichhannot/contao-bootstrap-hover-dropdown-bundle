@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.4.1] - 2022-11-24
+- Fixed: handle dropdown hover for mobile safari
+
 ## [1.4.0] - 2022-09-14
 - Changed: allow symfony 5
 - Changed: remove test setup
