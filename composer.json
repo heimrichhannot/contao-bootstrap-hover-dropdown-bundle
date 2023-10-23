@@ -5,9 +5,10 @@
   "keywords": ["contao", "bootstrap", "navigation", "hover-dropdown"],
   "license": "LGPL-3.0-or-later",
   "require": {
-    "php": "^7.1 || ^8.0",
-    "symfony/http-kernel": "^3.4.26 || ^4.1.12 || ^5.4",
-    "contao/core-bundle": "^4.4",
+    "php": "^7.4 || ^8.0",
+    "symfony/http-kernel": "^4.1.12 || ^5.4",
+    "contao/core-bundle": "^4.9",
+    "heimrichhannot/contao-encore-contracts": "^1.0",
     "heimrichhannot/contao-utils-bundle": "^2.4",
     "heimrichhannot-contao-components/modernizr": "^1.0"
   },
@@ -17,13 +18,6 @@
     }
   },
   "extra": {
-    "contao-manager-plugin": "HeimrichHannot\\BootstrapHoverDropdownBundle\\ContaoManager\\Plugin",
-    "foxy": true
-  },
-  "suggest": {
-    "heimrichhannot/contao-encore-bundle": "Provide webpack encore asset support."
-  },
-  "conflict": {
-    "heimrichhannot/contao-encore-bundle": "<1.5"
+    "contao-manager-plugin": "HeimrichHannot\\BootstrapHoverDropdownBundle\\ContaoManager\\Plugin"
   }
 }

@@ -21,7 +21,7 @@ use Symfony\Component\Config\Loader\LoaderInterface;
 /**
  * Class Plugin.
  */
-class Plugin implements BundlePluginInterface, ExtensionPluginInterface, ConfigPluginInterface
+class Plugin implements BundlePluginInterface, ConfigPluginInterface
 {
     /**
      * {@inheritdoc}
@@ -39,21 +39,8 @@ class Plugin implements BundlePluginInterface, ExtensionPluginInterface, ConfigP
     /**
      * {@inheritdoc}
      */
-    public function getExtensionConfig($extensionName, array $extensionConfigs, ContainerBuilder $container)
-    {
-        return ContainerUtil::mergeConfigFile(
-            'huh_encore',
-            $extensionName,
-            $extensionConfigs,
-            __DIR__.'/../Resources/config/config_encore.yml'
-        );
-    }
-
-    /**
-     * {@inheritdoc}
-     */
     public function registerContainerConfiguration(LoaderInterface $loader, array $managerConfig)
     {
-        $loader->load('@HeimrichHannotBootstrapHoverDropdownBundle/Resources/config/services.yml');
+        $loader->load('@HeimrichHannotBootstrapHoverDropdownBundle/Resources/config/services.yaml');
     }
 }

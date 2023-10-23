@@ -7,16 +7,18 @@
 
 namespace HeimrichHannot\BootstrapHoverDropdownBundle\EventListener;
 
+use Contao\CoreBundle\ServiceAnnotation\Hook;
 use Contao\LayoutModel;
 use Contao\PageModel;
 use Contao\PageRegular;
 
+/**
+ * @Hook("generatePage")
+ */
 class GeneratePageListener
 {
-    /**
-     * @Hook("generatePage")
-     */
-    public function onGeneratePage(PageModel $pageModel, LayoutModel $layout, PageRegular $pageRegular): void
+
+    public function __invoke(PageModel $pageModel, LayoutModel $layout, PageRegular $pageRegular): void
     {
         if (!isset($GLOBALS['TL_JAVASCRIPT']['modernizr'])) {
             $GLOBALS['TL_JAVASCRIPT']['modernizr'] = 'assets/modernizr/dist/modernizr-custom.js|static';

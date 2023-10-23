@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.5.0] - 2023-11-23
+- Added: encore contracts support
+- Changed: small code adjustments
+- Changed: raised min php version to 7.4
+- Changed: raised min contao version to 4.9
+
 ## [1.4.1] - 2022-11-24
 - Fixed: handle dropdown hover for mobile safari
 
