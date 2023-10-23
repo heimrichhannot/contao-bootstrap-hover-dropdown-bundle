@@ -5,17 +5,28 @@
 
 This bundle offers hover functionality for the contao navigation using a bootstrap dropdown menu.
 
+## Feature 
+
+* hover support for bootstrap dropdown menu
+* [Encore Bundle](https://github.com/heimrichhannot/contao-encore-bundle) support
+
 ## Installation
 
-Prerequisites:
-* Bootstrap ^4.0
-* Contao ^4.4
+1. Install via composer: 
 
-Install via composer: `composer require heimrichhannot/contao-bootstrap-hover-dropdown-bundle` and update your database.
+    ```
+    composer require heimrichhannot/contao-bootstrap-hover-dropdown-bundle
+    ```
 
-### Installation with frontend assets using webpack
+1. Update your database.
+1. If you're using encore bundle, run prepare and build command.
 
-This bundle is prepared to be used with webpack. Please see the [introductions](https://github.com/heimrichhannot/contao-encore-bundle/blob/master/docs/introductions/bundles_with_webpack.md). If you want to configure your Modernizr setup using Webpack, also check out the Modernizr section there.
+
+## Usage
+
+Select the `nav_hover_dropdown.html5` (legacy: `nav_navbar_collapse_hover.html5`) template inside your navigation module or copy the template and adjust for your needs.
+
+If you're using encore bundle, activate the `contao-bootstrap-hover-dropdown-bundle` entry in your layout or page settings.
 
 #### Modernizr config
 
@@ -31,7 +42,3 @@ If you configure your Modernizr setup with webpack, you can disable `$GLOBALS['T
     ]
 }
 ```
-
-## Usage
-
-Select the `nav_hover_dropdown.html5` (legacy: `nav_navbar_collapse_hover.html5`) template inside your navigation module or copy the template and adjust for your needs.
