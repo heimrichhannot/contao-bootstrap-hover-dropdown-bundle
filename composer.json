@@ -5,12 +5,11 @@
   "keywords": ["contao", "bootstrap", "navigation", "hover-dropdown"],
   "license": "LGPL-3.0-or-later",
   "require": {
-    "php": "^7.4 || ^8.0",
-    "symfony/http-kernel": "^4.1.12 || ^5.4",
-    "contao/core-bundle": "^4.9 || ^5.0",
+    "php": "^8.0",
+    "symfony/http-kernel": "^4.1.12 || ^5.4 || ^6.0",
+    "contao/core-bundle": "^4.13 || ^5.0",
     "heimrichhannot/contao-encore-contracts": "^1.0",
-    "heimrichhannot/contao-utils-bundle": "^2.4",
-    "heimrichhannot-contao-components/modernizr": "^1.0"
+    "heimrichhannot/contao-utils-bundle": "^2.4 || ^3.0@beta"
   },
   "autoload": {
     "psr-4": {

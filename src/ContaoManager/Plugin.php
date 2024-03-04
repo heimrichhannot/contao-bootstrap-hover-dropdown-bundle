@@ -26,20 +26,22 @@ class Plugin implements BundlePluginInterface, ConfigPluginInterface
     /**
      * {@inheritdoc}
      */
-    public function getBundles(ParserInterface $parser)
+    public function getBundles(ParserInterface $parser): array
     {
         return [
-            BundleConfig::create(HeimrichHannotBootstrapHoverDropdownBundle::class)->setLoadAfter([
-                ContaoCoreBundle::class,
-                'bootstrapper',
-            ]),
+            BundleConfig::create(HeimrichHannotBootstrapHoverDropdownBundle::class)
+                ->setLoadAfter([
+                    ContaoCoreBundle::class,
+                    'bootstrapper',
+                ]),
         ];
     }
 
     /**
      * {@inheritdoc}
+     * @throws \Exception
      */
-    public function registerContainerConfiguration(LoaderInterface $loader, array $managerConfig)
+    public function registerContainerConfiguration(LoaderInterface $loader, array $managerConfig): void
     {
         $loader->load('@HeimrichHannotBootstrapHoverDropdownBundle/Resources/config/services.yaml');
     }
