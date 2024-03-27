@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.6.0] - 2024-03-27
+- Added: Support for Contao 5
+
 ## [1.5.0] - 2023-11-23
 - Added: encore contracts support
 - Changed: small code adjustments
