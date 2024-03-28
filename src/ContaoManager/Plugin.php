@@ -1,7 +1,9 @@
 <?php
 
-/*
- * Copyright (c) 2020 Heimrich & Hannot GmbH
+/**
+ * This file is part of the "bootstrap-hover-dropdown-bundle" Extension for Contao Open Source CMS.
+ *
+ * @copyright Heimrich & Hannot GmbH, 2024
  * @license LGPL-3.0-or-later
  */
 
@@ -12,15 +14,9 @@ use Contao\ManagerPlugin\Bundle\BundlePluginInterface;
 use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 use Contao\ManagerPlugin\Config\ConfigPluginInterface;
-use Contao\ManagerPlugin\Config\ContainerBuilder;
-use Contao\ManagerPlugin\Config\ExtensionPluginInterface;
 use HeimrichHannot\BootstrapHoverDropdownBundle\HeimrichHannotBootstrapHoverDropdownBundle;
-use HeimrichHannot\UtilsBundle\Container\ContainerUtil;
 use Symfony\Component\Config\Loader\LoaderInterface;
 
-/**
- * Class Plugin.
- */
 class Plugin implements BundlePluginInterface, ConfigPluginInterface
 {
     /**
